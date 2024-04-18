@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/commons.dart';
 import '../components/list_tile_component.dart';
+import 'login_form_screen.dart';
 
 class LoginNeededScreen extends StatelessWidget {
   const LoginNeededScreen({super.key});
@@ -35,7 +38,11 @@ class LoginNeededScreen extends StatelessWidget {
                   SizedBox(height: 8),
                   Text(
                     'Please Login',
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16,
+                      color: AppColors.mainColor,
+                    ),
                   ),
                 ],
               ),
@@ -44,7 +51,11 @@ class LoginNeededScreen extends StatelessWidget {
             //already have an account
             const Text(
               'Already have an account?',
-              style: TextStyle(fontWeight: FontWeight.w400, fontSize: 12),
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 12,
+                color: AppColors.mainColor,
+              ),
             ),
             //login text button
             TextButton(
@@ -63,7 +74,11 @@ class LoginNeededScreen extends StatelessWidget {
               title: 'Continue with Email',
               icon: Icons.mail,
               isContinueWithEmail: true,
-              onTab: () {},
+              onTab: () {
+                navigateTo(context, const LoginFormScreen());
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (_) => const LoginFormScreen()));
+              },
             ),
             const Divider(height: 64, color: Colors.grey),
             const Text(

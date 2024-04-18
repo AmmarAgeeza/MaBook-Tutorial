@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/commons.dart';
 import 'login_needed_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,11 +11,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  //ToDo: Search for Native Splash Screen
+  //ToDo: Search for Extention Methods
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.push(context,
-          MaterialPageRoute(builder: (_) => const LoginNeededScreen()));
+      navigateAndFinish(context, const LoginNeededScreen());
+      // Navigator.push(context,
+      //     MaterialPageRoute(builder: (_) => const LoginNeededScreen()));
     });
     super.initState();
   }

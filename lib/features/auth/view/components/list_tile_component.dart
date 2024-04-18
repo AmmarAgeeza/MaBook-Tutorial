@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/app_colors.dart';
+
 class ListTileComponet extends StatelessWidget {
   const ListTileComponet({
     super.key,
     required this.title,
     this.icon,
-    this.isContinueWithEmail = false, required this.onTab,
+    this.isContinueWithEmail = false,
+    required this.onTab,
   });
   final String title;
   final IconData? icon;
@@ -19,7 +22,7 @@ class ListTileComponet extends StatelessWidget {
           side: BorderSide(
               width: 1,
               color: isContinueWithEmail ? Colors.black : Colors.grey)),
-      tileColor: isContinueWithEmail ? Colors.black : Colors.white,
+      tileColor: isContinueWithEmail ? AppColors.mainColor : Colors.white,
       leading: icon == null
           ? null
           : Icon(icon,
