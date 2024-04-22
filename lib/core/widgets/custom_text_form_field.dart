@@ -10,7 +10,9 @@ class CustomTextFormField extends StatelessWidget {
     this.suffixIcon,
     this.hint,
     this.label,
-    this.validator, this.textInputAction,
+    this.validator,
+    this.textInputAction,
+   
   });
   final bool isPassword;
   final TextEditingController controller;
@@ -31,12 +33,15 @@ class CustomTextFormField extends StatelessWidget {
       onChanged: onChanged,
       validator: validator,
       autovalidateMode: AutovalidateMode.onUserInteraction,
-      textInputAction:textInputAction,
+      textInputAction: textInputAction,
       decoration: InputDecoration(
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         hintText: hint,
         labelText: label,
+        enabledBorder: const OutlineInputBorder(),
+        fillColor: Theme.of(context).inputDecorationTheme.fillColor,
+        filled: Theme.of(context).inputDecorationTheme.filled,
       ),
     );
   }

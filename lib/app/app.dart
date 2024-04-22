@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/utils/app_strings.dart';
 import '../core/utils/app_theme.dart';
-import '../features/auth/view/screens/splash_screen.dart';
+import '../features/base_screen/view/screens/base_screen.dart';
 
 class MaBook extends StatelessWidget {
   const MaBook({super.key});
@@ -16,7 +16,7 @@ class MaBook extends StatelessWidget {
       theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light,
       darkTheme: AppTheme.darkTheme,
-      home: const SplashScreen(),
+      home: const BaseScreen(),
     );
   }
 }
