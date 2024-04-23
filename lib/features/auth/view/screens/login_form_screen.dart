@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ma_book/core/utils/commons.dart';
 
 import '../../../../core/utils/app_strings.dart';
-import '../../../../core/utils/commons.dart';
 import '../../../../core/widgets/custom_text_form_field.dart';
-import '../../../base_screen/view/screens/base_screen.dart';
 import '../components/list_tile_component.dart';
 
 class LoginFormScreen extends StatefulWidget {
@@ -95,10 +94,13 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
                   if (formKey.currentState!.validate()) {
                     if (emailController.text == AppStrings.email &&
                         passwordController.text == AppStrings.password) {
-                      navigateTo(
-                        context,
-                        const BaseScreen(),
-                      );
+                      showSnackBar('Login Successful', context);
+                      // navigateTo(
+                      //   context,
+                      //   const BaseScreen(),
+                      // );
+                    } else {
+                      showSnackBar('Login Failed', context);
                     }
                     //toast
                   }

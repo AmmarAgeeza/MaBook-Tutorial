@@ -4,12 +4,14 @@ import 'app_colors.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
+    fontFamily: 'Laila',
     //screen background
     scaffoldBackgroundColor: const Color(0xffFFFFFF),
     //app bar theme
     appBarTheme: const AppBarTheme(
       centerTitle: true,
       backgroundColor: AppColors.white,
+       surfaceTintColor: Colors.white,
     ),
     //text field theme
     inputDecorationTheme: const InputDecorationTheme(

@@ -4,4 +4,5 @@ class AppStrings{
   static const String login = 'Login';
   static const String email = 'ammar@gmail.com';
   static const String password = 'ammar123';
+  static const String categories = 'Categories';
 }

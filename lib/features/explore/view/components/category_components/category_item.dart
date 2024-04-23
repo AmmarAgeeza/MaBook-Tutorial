@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/app_styles.dart';
 import '../../../data/models/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -17,7 +18,18 @@ class CategoryItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(model.icon),
-            Text(model.name, style: const TextStyle(fontSize: 16)),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(model.name,
+                  style: AppStyles.bold16.copyWith(
+                      // color: AppColors.white,
+                      )
+                  // const TextStyle(
+                  //   fontSize: 16,
+                  //   color:AppColors.white
+                  // ),
+                  ),
+            ),
           ],
         ),
       ),

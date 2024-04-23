@@ -49,5 +49,53 @@ class CategoryModel {
       name: 'Education',
       icon: Icons.grade,
     ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
+    const CategoryModel(
+      name: 'Business',
+      icon: Icons.business,
+    ),
+    const CategoryModel(
+      name: 'Education',
+      icon: Icons.grade,
+    ),
   ];
 }

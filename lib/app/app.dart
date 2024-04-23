@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ma_book/features/auth/view/screens/splash_screen.dart';
 
 import '../core/utils/app_strings.dart';
 import '../core/utils/app_theme.dart';
